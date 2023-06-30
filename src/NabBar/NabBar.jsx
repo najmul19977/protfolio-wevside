@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NabBar = () => {
     return (
-        <div>
+        <div className='sticky top-0 z-10 w-full'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -13,23 +13,23 @@ const NabBar = () => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
 
                             <li> <Link to='/'>Home</Link></li>
-                            <li> <Link to='/'>Home</Link></li>
-                            <li> <Link to='/'>Home</Link></li>
-                            <li> <Link to='/'>Home</Link></li>
+                            <li> <Link to='/about'>About Me</Link></li>
+                            <li> <Link to='/projects'>My Projects</Link></li>
+                            <li> <Link to='/contact'>Contact Me</Link></li>
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Najmul Kabir</a>
+                    <a className="btn btn-ghost normal-case text-xl text-primary font-bold">Najmul Kabir</a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li> <Link to='/'>Home</Link></li>
-                        <li> <Link to='/'>Home</Link></li>
-                        <li> <Link to='/'>Home</Link></li>
-                        <li> <Link to='/'>Home</Link></li>
+                        <li> <Link to='/about'>About Me</Link></li>
+                        <li> <Link to='/projects'>My Projects</Link></li>
+                        <li> <Link to='/contact'>Contact Me</Link></li>
                     </ul>
                 </div>
-               
+
             </div>
         </div>
     );
