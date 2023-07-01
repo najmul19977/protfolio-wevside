@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../../assets/profile.jpg'
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 
@@ -35,18 +35,19 @@ const Header = () => {
                                 />
                             </span>
                         </h1>
-                        <p className="py-6">I have completed my graduation in the CSE department and also completed my web development course from programming hero. It was a six-month journey.I have learned some Technology and I have also completed some front-end and full-stack projects.I am a very hardworking and honest person. I am always still on my way.</p>
+                        <p className="py-6 text-justify mr-6">I have completed my graduation in the CSE department and also completed my web development course from programming hero. It was a six-month journey.I have learned some Technology and I have also completed some front-end and full-stack projects.I am a very hardworking and honest person. I am always still on my way.</p>
                         <div className='flex text-4xl mb-4 gap-4'>
                             
                             <a href="https://web.facebook.com/najmul.kabir.14/" target='blank' rel="noopener noreferrer"><FaFacebookSquare></FaFacebookSquare></a>
                             <a href="https://github.com/najmul19977" target='blank' rel="noopener noreferrer"><FaGithubSquare></FaGithubSquare></a>
                             <a href="https://www.linkedin.com/in/najmul-kabir-a3b77a23a/" target='blank' rel="noopener noreferrer"><FaLinkedin></FaLinkedin></a>
+                            <a href="https://www.najmulkabir19977@gmail.com" target='blank' rel="noopener noreferrer"><FaEnvelope></FaEnvelope></a>
                            
                             
                             
 
                         </div>
-                        <button className="btn btn-primary">Download Resume</button>
+                        <button className="btn btn-primary"><a href="resume.pdf" download={true} target='blank'>Download Resume</a></button>
                     </div>
                 </div>
             </div>
