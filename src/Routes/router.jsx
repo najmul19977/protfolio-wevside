@@ -12,16 +12,17 @@ import Skill from "../Pages/Skill/Skill";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element:<Main></Main>,
     children: [
       {
         path: '/',
         element: <Home></Home>
       },
-
+      
     ]
-  },
+   
 
+  },
   {
     path: 'about',
     element: <About></About>
@@ -39,5 +40,9 @@ export const router = createBrowserRouter([
     element: <Contacts></Contacts>
 
   }
+ 
+  
+
+  
 
 ]);
