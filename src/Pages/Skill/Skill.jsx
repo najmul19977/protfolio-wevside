@@ -19,8 +19,9 @@ import github from '../../assets/github.png';
 const Skill = () => {
 
    const mainDiv = {
-      width: "50%",
-      margin: '5px',
+      /* width: "50%", */
+      padding: '5px',
+      
 
 
    };
@@ -29,8 +30,8 @@ const Skill = () => {
 
 
       <div className=''>
-         <h2 className='text-4xl font-bold text-center'>Skill Section</h2>
-         <Marquee>
+         <h2 className='text-4xl font-bold text-center mt-5 mb-5 border-2 border-t-0 w-1/4 mx-auto border-b-indigo-500'>Skill Section</h2>
+         <Marquee className='bg-base-200'>
             I <div className='flex w-10 h-10 mx-auto  m-5 gap-4'>
                <img src={html} alt="" />
                <img src={css} alt="" />
@@ -51,7 +52,7 @@ const Skill = () => {
 
             </div>
          </Marquee>
-         <div className='flex'>
+         <div className='grid md:grid-cols-2 gap-10 bg-base-200 w-full p-5'>
             <div style={mainDiv}>
 
 
@@ -82,10 +83,10 @@ const Skill = () => {
                <h2 className='text-xl mb-2 mt-2 font-bold'>Express JS</h2>
                <ProgressBar completed={65} bgColor='green' animateOnRender={true} />
                <h2 className='text-xl mb-2 mt-2 font-bold'>GitHub</h2>
-               <ProgressBar completed={75} bgColor='grey' animateOnRender={true} />
+               <ProgressBar completed={75} bgColor='red' animateOnRender={true} />
 
             </div>
-            <div className='w-1/2 grid grid-cols-3 justify-between gap-5 ml-5 p-10 bg-black border-4 border-indigo-500'>
+            <div className='  grid grid-cols-3  justify-between gap-5  p-10 bg-black border-4 border-indigo-500'>
                
                   <div className='flex flex-col justify-center items-center shadow-md hover:scale-105 duration-500 rounded-lg border-2  border-b-indigo-500 border-t-0 '>
                      <img className='w-20 mx-auto' src={html} alt="" />

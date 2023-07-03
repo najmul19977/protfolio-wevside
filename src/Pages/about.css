@@ -1,0 +1,13 @@
+.long-text{
+    max-height: 0;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.expanded{
+    max-height: 40rem;
+    text-align: justify;
+    padding: 5px;
+    word-wrap:1px;
+}
