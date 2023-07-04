@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
 import Marquee from "react-fast-marquee";
 import html from '../../assets/html.png';
@@ -12,25 +12,23 @@ import node from '../../assets/Node.png';
 import js from '../../assets/js.png';
 import ex from '../../assets/ex.png';
 import github from '../../assets/github.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const Skill = () => {
 
-   const mainDiv = {
-      /* width: "50%", */
-      padding: '5px',
-      
-
-
-   };
+   useEffect(() => {
+      AOS.init({duration:2000});
+    }, []);
 
    return (
 
 
       <div className=''>
-         <h2 className='text-4xl font-bold text-center mt-5 mb-5 border-2 border-t-0 w-1/4 mx-auto border-b-indigo-500'>Skill Section</h2>
+         <h2 className='text-4xl font-bold text-center mt-5 mb-5 border-2 border-t-0 lg:w-1/4 md:w-full ml-5 mr-5 lg:mx-auto border-b-indigo-500' data-aos="fade-down" >Skill Section</h2>
          <Marquee className='bg-base-200'>
             I <div className='flex w-10 h-10 mx-auto  m-5 gap-4'>
                <img src={html} alt="" />
@@ -52,8 +50,8 @@ const Skill = () => {
 
             </div>
          </Marquee>
-         <div className='grid md:grid-cols-2 gap-10 bg-base-200 w-full p-5'>
-            <div style={mainDiv}>
+         <div className='grid md:grid-cols-2 gap-10 bg-base-200 w-full p-5' data-aos="fade-right">
+            <div className='p-5'>
 
 
 
@@ -86,7 +84,7 @@ const Skill = () => {
                <ProgressBar completed={75} bgColor='red' animateOnRender={true} />
 
             </div>
-            <div className='  grid grid-cols-3  justify-between gap-5  p-10 bg-black border-4 border-indigo-500'>
+            <div className='  grid grid-cols-3  justify-between gap-5  p-10 bg-black border-4 border-indigo-500' data-aos="fade-left">
                
                   <div className='flex flex-col justify-center items-center shadow-md hover:scale-105 duration-500 rounded-lg border-2  border-b-indigo-500 border-t-0 '>
                      <img className='w-20 mx-auto' src={html} alt="" />

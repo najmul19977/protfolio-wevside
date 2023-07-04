@@ -18,28 +18,31 @@ export const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>
       },
+      {
+        path:'about',
+        element:<About></About>
+      },
+      {
+        path:'projects',
+        element:<Projects></Projects>
+      },
+      {
+         path:'contact',
+         element:<Contacts></Contacts>
+      },
+      {
+        path:'skill',
+        element:<Skill></Skill>
+      }
       
     ]
    
 
   },
-  {
-    path: 'about',
-    element: <About></About>
-  },
-  {
-    path: 'Projects',
-    element: <Projects></Projects>
-  },
-  {
-    path: 'skill',
-    element: <Skill></Skill>
-  },
-  {
-    path: 'contact',
-    element: <Contacts></Contacts>
+ 
+  
 
-  }
+  
  
   
 

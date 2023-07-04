@@ -5,6 +5,8 @@ import NabBar from '../NabBar/NabBar';
 
 
 import Home from '../Pages/Home/Home';
+import About from '../Pages/About';
+import Header from './Header/Header';
 
 
 
@@ -12,8 +14,9 @@ const Main = () => {
     return (
         <div>
             <NabBar></NabBar>
-             <Home></Home>
-            
+         
+             <Outlet></Outlet>
+             
             <Footer></Footer>
         </div>
     );

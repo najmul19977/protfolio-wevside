@@ -2,7 +2,9 @@
 
 
 
+import Footer from '../../Footer/Footer';
 import Header from '../../Layout/Header/Header';
+import NabBar from '../../NabBar/NabBar';
 
 
 import About from '../About';
@@ -20,6 +22,7 @@ const Home = () => {
             <Projects></Projects>
             <Skill></Skill>
             <Contacts></Contacts>
+            
             
           
             

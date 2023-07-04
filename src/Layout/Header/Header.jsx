@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import image from '../../assets/profile.jpg'
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowAltCircleDown } from 'react-icons/fa';
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
 import protfolio from '../../assets/protfolio-pic2.jpg';
 import pic from '../../assets/portfolio-pic1.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init({duration:2000});
+      }, []);
 
     return (
         <div>
@@ -16,10 +21,10 @@ const Header = () => {
             <div className="hero min-h-auto w-full bg-base-200">
 
                 <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center" data-aos="fade-up">
                         <img src={pic} className="rounded-full shadow-2xl w-64 h-64 lg:h-auto lg:max-w-xs object-cover" alt="Profile Picture" />
                     </div>
-                    <div>
+                    <div data-aos="fade-down">
                         <h1 className="text-3xl font-bold mt-10">Hello, I am</h1>
                         <h1 className="text-5xl font-bold text-primary mt-2 mb-2">Najmul Kabir</h1>
                         <h1 className="text-3xl font-bold ">
@@ -40,7 +45,7 @@ const Header = () => {
                             </span>
                         </h1>
                         <p className="py-6 text-justify mr-6">I have completed my graduation in the CSE department and also completed my web development course from programming hero. It was a six-month journey.I have learned some Technology and I have also completed some front-end and full-stack projects.I am a very hardworking and honest person. I am always still on my way.</p>
-                        <div className='flex text-4xl mb-2 mt-2 gap-4'>
+                        <div className='flex text-4xl mb-2 mt-2 gap-4' data-aos="fade-up">
                             <a href="https://web.facebook.com/najmul.kabir.14/" target='_blank' rel="noopener noreferrer"><FaFacebookSquare /></a>
                             <a href="https://github.com/najmul19977" target='_blank' rel="noopener noreferrer"><FaGithubSquare /></a>
                             <a href="https://www.linkedin.com/in/najmul-kabir-a3b77a23a/" target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
