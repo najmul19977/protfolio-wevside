@@ -9,7 +9,7 @@ const Footer = () => {
       }, []);
     return (
         <div>
-            <footer className="footer p-10 bg-neutral text-neutral-content">
+            <footer className="grid md:grid-cols-1 items-center footer p-10 bg-neutral text-neutral-content">
                 <div className='text-2xl font-bold' data-aos="fade-right">
                    
                     <p>Najmul Kabir.<br />Font-End Developer <br />Mymensingh,Bangladesh</p>

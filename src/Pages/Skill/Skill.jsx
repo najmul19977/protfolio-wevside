@@ -29,8 +29,8 @@ const Skill = () => {
 
       <div className=''>
          <h2 className='text-4xl font-bold text-center mt-5 mb-5 border-2 border-t-0 lg:w-1/4 md:w-full ml-5 mr-5 lg:mx-auto border-b-indigo-500' data-aos="fade-down" >Skill Section</h2>
-         <Marquee className='bg-base-200'>
-            I <div className='flex w-10 h-10 mx-auto  m-5 gap-4'>
+         <Marquee className='bg-base-200 '>
+            I <div className='flex w-10 h-10 mx-auto md:gap-5'>
                <img src={html} alt="" />
                <img src={css} alt="" />
                <img src={boot} alt="" />
